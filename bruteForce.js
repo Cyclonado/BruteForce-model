@@ -88,12 +88,11 @@ const chars = generateCharacters();
 const password = `cat`; //  <--- input the desired password here.
 
 
-
-
 // in this method, the password length has to be specified beforehand
 // putting numbers bigger than the password itself will break the program
 
-console.log(bruteForce(chars, password, 10));
+
+console.log(bruteForce(chars, password, 3);
 
 console.log(`*******************************`);
 
