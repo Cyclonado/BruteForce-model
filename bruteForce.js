@@ -1,7 +1,7 @@
 
 //function to generate characters//
 
-function generateCharecters(){
+function generateCharacters(){
 
     const chars = [];
     for (let i = 97; i <= 122; i++){
@@ -79,13 +79,19 @@ function recursiveBruteForce(chars, password, readPassword, combPrevious = ``){
     }
 }
 
-const chars = generateCharecters();
+const chars = generateCharacters();
 
 
 
 
 
-const password = `Igor192004`; //  <--- input the desired password here.
+const password = `cat`; //  <--- input the desired password here.
+
+
+
+
+// in this method, the password length has to be specified beforehand
+// putting numbers bigger than the password itself will break the program
 
 console.log(bruteForce(chars, password, 10));
 
@@ -94,10 +100,6 @@ console.log(`*******************************`);
 recursiveBruteForce(chars, password, password.length, ``);
 
 console.log(`*******************************`);
-
-
-// in this method, the password length has to be specified beforehand
-// putting numbers bigger than the password itself will break the program
 
 recursiveBruteForce(chars, `duck`, 4, ``);
 
