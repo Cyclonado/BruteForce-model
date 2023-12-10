@@ -1,4 +1,7 @@
 
+//the part where you need to edit and add you desired password is in the bottom.
+
+
 //function to generate characters//
 
 function generateCharacters(){
